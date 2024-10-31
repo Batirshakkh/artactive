@@ -1,0 +1,98 @@
+.otziv{
+    height: 670px;
+    margin: 20px 0 0 0;
+    &-head{
+        display: none;
+    }
+    &-slider{
+        text-align: justify;
+        position: relative;
+        &-list{
+            margin: 10px 5px;
+            padding: 60px 20px 52px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 0 #cecaca;
+            &-img img{
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+            &-info{
+                margin: 20px 0;
+                p:nth-child(1){
+                    font-size: 14px;
+                    font-family: OpenSansL;
+                    color: #000;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                p:nth-child(2){
+                    font-size: 16px;
+                    color: #000;
+                    margin: 45px 0 0 0;
+                    font-family: OpenSansB;
+                    font-weight: 600;
+                    line-height: 30px;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-family: OpenSansL;
+                    color: #50a2e2;
+                    font-weight: 600;
+                }
+            }
+        }
+        
+    }
+    .slick-prev{
+        position: absolute;
+        left: 20px;
+        background: url(../images/arrowPrev.png);
+        top: 600px;
+        width: 90px;
+        background-repeat: no-repeat;
+        &::before{
+            display: none;
+        }
+    }
+    .slick-next{
+        position: absolute;
+        right: 20px;
+        top: 600px;
+        background: url(../images/arrowNext.png);
+        background-repeat: no-repeat;
+        width: 90px;
+        &::before{
+            display: none;
+        }
+    }
+}
+@media only screen and (min-width:768px){
+    .otziv-slider-list-img{
+        float: left;
+        margin: 0 66px 0 60px;
+    }
+    .otziv-slider-list-info{
+        margin: 0 0 0 260px;
+    }
+    .otziv{
+        padding: 75px 0 130px 0;
+        .slick-next{
+            top: 360px;
+            left: 200px;
+        }
+        .slick-prev{
+            top: 360px;
+        }
+        &-head{
+            display: block;
+            font-family: MullerM;
+            font-size: 30px;
+            color: #7f38bd;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.poligraf{
+    background-color: #faf8fb;
+    position: relative;
+
+    &-block{
+        position: relative;
+        padding: 70px 0 60px 0;
+        &-info{
+            &__head{
+                font-size: 24px;
+                font-weight: 500;
+                font-family: MullerM;
+                color: #000;
+                position: relative;
+                margin-bottom: 50px;
+            }
+            &__text{
+                font-size: 14px;
+                font-family: OpenSansL;
+                font-weight: 400;
+                color: #5e606a;
+                line-height: 24px;
+                p:nth-child(1){
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        &-photo{
+            margin-top: 23px;
+            img{
+                max-width: 100%;
+                display: block;
+                height: auto;
+
+            }
+        }
+        &-form{
+            margin-top: 41px;
+            p:nth-child(1){
+                font-style: italic;
+                font-family: OpenSansL;
+                font-size: 16px;
+                text-transform: none;
+                text-decoration: none;
+                color: #000;
+                font-weight: 600;
+                line-height: 30.1px;
+            }
+            p:nth-child(2){
+                font-family: OpenSansL;
+                font-size: 16px;
+                text-transform: none;
+                text-decoration: none;
+                color: #000;
+                font-weight: 600;
+                line-height: 30.1px;
+                max-width: 200px;
+                font-size: 20px;
+                margin-bottom: 21px;
+            }
+            &__link{
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                border-bottom:1px solid #cccccc;
+                color: #cccccc;
+                font-family: OpenSansL;
+                padding: 9px 15px;
+                font-style: italic;
+            }
+            &__otpr{
+                border: none;
+                background: #fb0275;
+                border-radius: 30px;
+                padding: 15px 0;
+                font-family: OpenSansB;
+                color: white;
+                text-transform: uppercase;
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+        }
+        
+    }
+
+
+}
+@media only screen and (min-width:768px){
+    .poligraf{
+        height: 710px;
+    }
+    .poligraf::before{
+        content: "";
+        height: 130px;
+        width: 10px;
+        background: url(../images/lines.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: 3;
+        left: 50%;
+        top: -69px;
+    }
+    .poligraf-block-info__head{
+        font-size: 32px;
+        width: 440px;
+    }
+    .poligraf-block{
+        padding: 110px 0 118px 0;
+    }
+    .poligraf-block-photo{
+        float: right;
+       width: 50%;
+    }
+    .poligraf-block-form{
+        float: left;
+        width: 41%;
+    }
+}
+@media only screen and (min-width:1440px){
+    .poligraf{
+        height: 730px;
+        margin-top: 100px;
+    }
+    .poligraf-block-info{
+        width: 50%;
+    }
+    .poligraf-block-photo{
+        margin-top: -379px;
+    }
+    .poligraf-block-form{
+        p:nth-child(2){
+            max-width: 100%;
+        }
+        form{
+            display: flex;
+            input{
+                margin: 0 20px;
+            }
+        }
+    }
+}

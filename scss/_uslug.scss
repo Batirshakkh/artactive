@@ -1,0 +1,211 @@
+.uslug{
+    background-color: #faf8fb;
+    &-block{
+        position: relative;
+        padding: 68px 0 70px 0;
+        &-title{
+            font-size: 30px;
+            color: #7f38bd;
+            font-weight: 700;
+            font-family: MullerM;
+        }
+        &-head{
+            font-size: 24px;
+            margin: 43px 0 48px 0;
+            font-weight: 500;
+            font-family: MullerB;
+        }
+        &-info{
+            font-family: OpenSans;
+            font-size: 14px;
+            text-transform: none;
+            text-decoration: none;
+            color: #5e606a;
+            font-weight: 400;
+            line-height: 24px;
+            text-indent: 8px;
+        }
+        
+    }
+    .buttons{
+        position: absolute;
+        top: 700px;
+        right: 0;
+        
+    }
+   
+    .slick-prev{
+        position: absolute;
+        left: 0;
+        background: url(../images/arrowPrev.png);
+        top: 250px;
+        width: 90px;
+        background-repeat: no-repeat;
+        &::before{
+            display: none;
+        }
+    }
+    .slick-next{
+        position: absolute;
+        right: 10px;
+        top: 250px;
+        background: url(../images/arrowNext.png);
+        background-repeat: no-repeat;
+        width: 90px;
+        &::before{
+            display: none;
+        }
+    }
+}
+.slick-dots li button:before{
+    background-color: transparent;
+    font-size: 0;
+    color: transparent;
+    
+}
+
+.card img{
+    width: 100%;
+    display: block;
+    height: 188px;
+}
+
+.uslug-block-ques{
+    display: none;
+    &-second{
+        margin-top: 70px;
+        padding: 34px 22px 30px 22px;
+        box-shadow: 0 20px 20px 0 #d0bcd1;
+        background-color: #883eca;
+        border-radius: 10px;
+    }
+    &-inner-quest{
+        color: white;
+        font-family: OpenSansL;
+        font-style: italic;
+        font-size: 13px;
+    }
+    &-inner-kons{
+        font-family: OpenSansB;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+        margin: 10px 0 32px 0;
+    }
+    &-otziv-inner{
+        display: inline-block;
+        padding: 16px 0;
+        background-color: #fb0275;
+        font-family: OpenSans;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 30px;
+        width: 100%;
+        padding: 13px 0;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .uslug{
+        .slick-prev{
+            z-index: 2;
+            top: 440px;
+        }
+        .slick-next{
+            top: 440px;
+            right: 460px;
+        }
+    }
+    .card img{
+        height: auto;
+    }
+    .uslug-block:before {
+        content: "";
+        height: 130px;
+        width: 10px;
+        background: url(../images/lines.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -63px;
+        z-index: 3;
+        left: 50%;
+    }
+    .uslug-block-ques-second{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 33px 33px 36px 36px;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100px;
+        top: 780px;
+    }
+    .uslug-block-ques-inner{
+        flex-basis: 330px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        &-kons{
+            margin: 0;
+        }
+    }
+    .uslug-block-ques-otziv-inner{
+        width: 191px;
+    }
+}
+@media only screen and (min-width:1440px){
+    .uslug-block{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .uslug-block-head{
+        width: 620px;
+        margin: 80px 0 48px 0;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .card img{
+        width: 560px;
+        // margin: 0;
+    }
+    // .card-list__image{
+    //     margin: 0 ;
+    // }
+    .uslug-block-ques{
+        margin-top: 382px;
+        position: absolute;
+        padding: 36px 37px;
+        background-color: #883eca;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .uslug-block-ques-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .uslug{
+        .slick-prev{
+            top: 500px;
+        }
+    }
+    .uslug .slick-next {
+        top: 500px;
+        left: 150px;
+    }
+    .uslug-block-ques-second{
+        display: none;
+    }
+}

@@ -1,0 +1,109 @@
+.inter{
+    position: relative;
+    padding: 71px 0 251px 0;
+    &-block{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        &-info{
+            &__head{
+                font-family: MullerM;
+                font-size: 24px;
+                text-transform: none;
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+            }
+            &__text{
+                font-family: OpenSansL;
+                font-size: 14px;
+                text-transform: none;
+                text-decoration: none;
+                color: #5e606a;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 37px 0 43px 0;
+            }
+            a{
+                width: 100%;
+                display: inline-block;
+                padding: 16px 0;
+                background-color: #fb0275;
+                font-family: OpenSans;
+                font-size: 16px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #fff;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-align: center;
+                border-radius: 30px;
+            }
+        }
+        &-photo{
+            position: absolute;
+            right: 0;
+            bottom: 54px;
+            z-index: -1;
+            img{
+    
+                    max-width: 100%;
+                    height: auto;
+                
+            }
+        }
+    }
+}
+
+
+
+.inter-block-photo__d3{
+    display: none;
+}
+.inter-block-photo__d2{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+
+    .inter {
+        padding: 90px 0 399px 0;
+        &-block-info{
+            flex-basis: 550px;
+            &__head{
+                font-size: 32px;
+                max-width: 80%;
+            }
+            &__text{
+                margin: 66px 0 50px 0;
+            }
+            a{
+                max-width: 242px;
+            }
+        }
+    }
+    .inter-block-photo__d1{
+        display: none;
+    }
+    .inter-block-photo__d2{
+        display: block;
+    }
+}
+@media only screen and (min-width:1440px){
+    .inter-block{
+        justify-content: flex-end;
+        &-photo{
+            position: absolute;
+            bottom: -35px;
+            left: -272px;
+            z-index: -1;
+        }
+    }
+    .inter-block-photo__d2{
+        display: none;
+    }
+    .inter-block-photo__d3{
+        display: block;
+    }
+}

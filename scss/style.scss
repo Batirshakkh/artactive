@@ -1,0 +1,70 @@
+@import "mixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::after,::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+}
+.wrapper{
+    overflow: hidden;
+}
+.container{
+    width: 90%;
+    margin: 0 auto
+}
+.container2{
+    width: 90%;
+    margin: 0 auto
+}
+.our-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.otziv-container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+@media only screen and (min-width:768px){
+   .our-container{
+    max-width: 720px;
+    margin: 0 auto;
+   }
+   .otziv-container {
+    max-width: 730px;
+}
+}
+@media only screen and (min-width:1440px){
+    .container{
+        width: 1185px;
+        margin: 0 auto;
+    }
+    .our-container{
+        max-width: 1140px;
+    }
+    .otziv-container {
+        max-width: 1366px;
+    }
+}
+
+@include font-face(OpenSansL, "../fonts/openSans/OpenSans-Light", 300, normal);
+@include font-face(OpenSansR, "../fonts/openSans/OpenSans-Regular", 400, normal);
+@include font-face(OpenSansB, "../fonts/openSans/OpenSans-Bold", 700, normal);
+@include font-face(MyriadPro,'../fonts/myriad/MyriadPro-Regular',400,normal);
+@include font-face(MullerM,'../fonts/muller/MullerMedium',500,normal);
+@include font-face(MullerB,'../fonts/muller/MullerBold',700,normal);
+@include font-face(MullerEB,'../fonts/muller/MullerExtraBold',800,normal);
+@include font-face(MullerH,'../fonts/muller/MullerHeavy',900,normal);
+
+@import "header";
+@import "our";
+@import "uslug";
+@import "inter";
+@import "poligraf";
+@import "otziv";
+@import "faq";
+@import "footer";
